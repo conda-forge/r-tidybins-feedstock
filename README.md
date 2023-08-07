@@ -1,11 +1,11 @@
-About r-tidybins
-================
+About r-tidybins-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidybins-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Harrison4192/tidybins
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidybins-feedstock/blob/main/LICENSE.txt)
 
 Summary: Multiple ways to bin numeric columns with a tidy output. Wraps a variety of existing binning methods into one function, and includes a new method for binning by equal value, which is useful for sales data. Provides a function to automatically summarize the properties of the binned columns.
 
