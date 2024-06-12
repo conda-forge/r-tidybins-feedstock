@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybins_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybins/tidybins_{{ version }}.tar.gz
-  sha256: e9494abb14d3c998932861e506a0a60ac5f65ef41d20ea110d8e5a153cf89ccf
+  sha256: c03cc98ac27c709317ee4472e75f724004df22dcc38300fba498e274361e4184
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -28,6 +28,7 @@ requirements:
     - r-base
     - r-clusterr
     - r-oner
+    - r-autostats
     - r-badger
     - r-dplyr
     - r-framecleaner
@@ -48,6 +49,7 @@ requirements:
     - r-base
     - r-clusterr
     - r-oner
+    - r-autostats
     - r-badger
     - r-dplyr
     - r-framecleaner
@@ -73,10 +75,7 @@ test:
 about:
   home: https://github.com/Harrison4192/tidybins
   license: GPL-3.0-or-later
-  summary: Multiple ways to bin numeric columns with a tidy output. Wraps a variety of existing
-    binning methods into one function, and includes a new method for binning by equal
-    value, which is useful for sales data. Provides a function to automatically summarize
-    the properties of the binned columns.
+  summary: Multiple ways to bin numeric columns with a tidy output. Wraps a variety of existing binning methods into one function, and includes a new method for binning by equal value, which is useful for sales data. Provides a function to automatically summarize the properties of the binned columns.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
