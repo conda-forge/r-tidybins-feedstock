@@ -20,7 +20,6 @@ build:
     - lib/R/lib/
     - lib/
 
-requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
@@ -28,6 +27,7 @@ requirements:
     - r-base
     - r-clusterr
     - r-oner
+    - r-autostats
     - r-badger
     - r-dplyr
     - r-framecleaner
@@ -48,6 +48,7 @@ requirements:
     - r-base
     - r-clusterr
     - r-oner
+    - r-autostats
     - r-badger
     - r-dplyr
     - r-framecleaner
